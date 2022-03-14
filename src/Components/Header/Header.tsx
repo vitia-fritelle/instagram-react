@@ -19,21 +19,15 @@ export default () => {
                 <div className="divisoria-vertical desktop1 desktop2"></div>
                 <img className="desktop1 desktop2" src={logo} alt="instagram"/>
             </div>
-            <input type="text" className="desktop1 desktop2" id="search-bar" name="search-bar" placeholder="Pesquisar"/>
+            <input type="text" className="desktop1 desktop2" id="search-bar" 
+                   name="search-bar" placeholder="Pesquisar"/>
             <img className="mobile" src={logo} alt="instagram"/>
             <div className="icons-group">
                 <a href="/">
                     <NavigateOutline cssClasses='icon desktop2 desktop1 mobile'/>
                 </a>
-                {icones.map(icone => {
-                    return (
-                        <a href="/">
-                            {icone}
-                        </a>
-                    );
-                })}
+                {icones.map(icone => <a href="/">{icone}</a>)}
             </div>
         </header>
-        
     )
 };

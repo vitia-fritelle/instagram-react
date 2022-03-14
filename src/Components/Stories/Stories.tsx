@@ -4,7 +4,8 @@ import driven from '../../assets/images/driven.jpg';
 export default () => {
     return (
         <div id='stories-section'>
-            <input type="radio" id="arrow-left" name="arrow" value="arrow-left" checked/>
+            <input type="radio" id="arrow-left" name="arrow" 
+                   value="arrow-left" checked/>
             <label id="first-button" htmlFor="arrow-left">
                 <ChevronBackCircle cssClasses="arrow-left desktop1 desktop2"/>
             </label>
@@ -18,7 +19,8 @@ export default () => {
                     </a>
                 );
             })}
-            <input type="radio" id="arrow-right" name="arrow" value="arrow-right"/>
+            <input type="radio" id="arrow-right" 
+                   name="arrow" value="arrow-right"/>
             <label id="second-button" htmlFor="arrow-right">
                 <ChevronForwardCircle cssClasses="arrow-right desktop1 desktop2"/>
             </label>
